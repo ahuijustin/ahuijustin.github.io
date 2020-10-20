@@ -1,0 +1,40 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col">
+        <ul class="contact-list">
+          {% if site.title -%}
+            <li class="p-name">{{ site.title | escape }}</li>
+          {% endif -%}
+        </ul>
+        <p class="feed-subscribe">
+          <a href="{{ 'feed.xml' | relative_url }}">
+            <svg class="svg-icon orange">
+              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="social-links footer-col">
+            {%- include social.html -%}
+      </div>
+      <div class="footer-col">
+        <p>{{ site.data.description.description | escape }}</p>
+      </div>
+
+    </div>
+
+    <div>
+      &copy; 2020 <a href="https://ahuijustin.github.io">Ahui</a>. &nbsp;&nbsp;
+      <span class="site-footer-credits">Theme from <a href="https://github.com/jekyll/minima">Minima</a>.</span>&nbsp;&nbsp;
+      <span class="site-footer-credits">Powered by <a href="https://jekyllrb.com/">Jekyll</a>.</span>&nbsp;&nbsp;
+      <span class="site-footer-credits">Hosted on <a href="https://wwww.github.com/ahuijustin">GitHub</a>.</span>
+    </div>
+
+  </div>
+
+</footer>
